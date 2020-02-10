@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        nodejs: 10
+    commands:
+      - echo "Installing something"
+  pre_build:
+    command:
+      -echo "We are in the pre build phase"
+  build:
+    commands:
+      - echo "We are build block"
+  post_build:
+    commands:
+      - echo "We are in the post build phase"
